@@ -1,0 +1,68 @@
+ext {
+
+    android = [
+            compileSdkVersion: 28,
+            minSdkVersion    : 19,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : "1.0",
+    ]
+
+    dependencies = [
+            // android兼容包
+            "appcompat-v7"                         : "androidx.appcompat:appcompat:1.0.2",
+            "support-v4"                           : "androidx.legacy:legacy-support-v4:1.0.0",
+            "design"                               : "com.google.android.material:material:1.0.0",
+            "support-vector-drawable"              : "androidx.vectordrawable:vectordrawable:1.0.1",
+            "constraint-layout"                    : "androidx.constraintlayout:constraintlayout:1.1.3",
+            "junit"                                : "junit:junit:4.12",
+            "runner"                               : "androidx.test:runner:1.1.1",
+            "espresso-core"                        : "androidx.test.espresso:espresso-core:3.1.1",
+            "support-fragment"                     : "androidx.fragment:fragment:1.0.0",
+
+            //第三方依赖
+            //rx系
+            "rxjava"                               : "io.reactivex.rxjava2:rxjava:2.1.12",
+            "rxandroid"                            : "io.reactivex.rxjava2:rxandroid:2.0.2",
+            "rxlifecycle"                          : "com.trello.rxlifecycle2:rxlifecycle:2.2.1",
+            "rxlifecycle-components"               : "com.trello.rxlifecycle2:rxlifecycle-components:2.2.1",
+            "rxbinding"                            : "com.jakewharton.rxbinding2:rxbinding:2.1.1",
+            "rxpermissions"                        : "com.github.tbruyelle:rxpermissions:0.10.2",
+
+            //network
+            "okhttp"                               : "com.squareup.okhttp3:okhttp:3.10.0",
+            "interceptor"                          : "com.squareup.okhttp3:logging-interceptor:3.9.1",
+            "retrofit"                             : "com.squareup.retrofit2:retrofit:2.4.0",
+            "converter-gson"                       : "com.squareup.retrofit2:converter-gson:2.4.0",
+            "adapter-rxjava"                       : "com.squareup.retrofit2:adapter-rxjava2:2.4.0",
+
+            //glide图片加载
+            "glide"                                : "com.github.bumptech.glide:glide:4.9.0",
+            "glide-compiler"                       : "com.github.bumptech.glide:compiler:4.9.0",
+            "glide-transformations"                : "jp.wasabeef:glide-transformations:4.0.0",
+
+            //gson
+            "gson"                                 : "com.google.code.gson:gson:2.8.2",
+
+            //recyclerview的databinding套装
+            "bindingcollectionadapter"             : "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:3.0.0",
+            "bindingcollectionadapter-recyclerview": "me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:3.0.0",
+
+            //多状态布局
+            "multipleStatusView"                   : "com.classic.common:multiple-status-view:1.5.1",
+
+            //material-dialogs对话框
+            "material-dialogs"                     : "com.afollestad.material-dialogs:core:0.9.6.0",
+            "material-dialogs:commons"             : "com.afollestad.material-dialogs:commons:0.9.6.0",
+
+            //Google AAC
+            "lifecycle-extensions"                 : "androidx.lifecycle:lifecycle-extensions:2.0.0",
+            "lifecycle-compiler"                   : "androidx.lifecycle:lifecycle-compiler:2.0.0",
+
+            //TwinklingRefreshLayout
+            "twinklingRefreshLayout"               : "com.lcodecorex:tkrefreshlayout:1.0.7",
+// - - - - - - - - - - - - - - - - - - - - - - -  以上在mvvmhd中依赖  - - - - - - - - - - - - - - - - - - - - - - -- - - - - - - - - - - - - - - - - - - - - - -
+
+
+    ]
+}

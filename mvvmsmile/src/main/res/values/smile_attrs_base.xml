@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="smile_content_padding_horizontal" format="dimension"/> <!-- 已废弃 -->
+    <attr name="smile_content_spacing_horizontal" format="dimension"/> <!-- margin 和 padding 等使用的内容通用水平间距 -->
+
+    <!--**********************************************
+    *                smile common color               *
+    **********************************************-->
+    <attr name="smile_config_color_blue" format="color"/>
+    <attr name="smile_config_color_red" format="color"/>
+    <attr name="smile_config_color_separator" format="color"/>
+    <attr name="smile_config_color_separator_darken" format="color"/>
+    <attr name="smile_config_color_background" format="color"/>
+    <attr name="smile_config_color_background_pressed" format="color"/>
+    <attr name="smile_config_color_black" format="color"/>
+    <attr name="smile_config_color_link" format="color"/>
+    <attr name="smile_config_color_pressed" format="color"/>
+
+    <attr name="smile_config_color_gray_1" format="color"/>
+    <attr name="smile_config_color_gray_2" format="color"/>
+    <attr name="smile_config_color_gray_3" format="color"/>
+    <attr name="smile_config_color_gray_4" format="color"/>
+    <attr name="smile_config_color_gray_5" format="color"/>
+    <attr name="smile_config_color_gray_6" format="color"/>
+    <attr name="smile_config_color_gray_7" format="color"/>
+    <attr name="smile_config_color_gray_8" format="color"/>
+    <attr name="smile_config_color_gray_9" format="color"/>
+
+    <attr name="smile_alpha_pressed" format="float"/>
+    <attr name="smile_alpha_disabled" format="float"/>
+
+    <attr name="smile_general_shadow_elevation" format="dimension"/>
+    <attr name="smile_general_shadow_alpha" format="float"/>
+
+
+    <!--**********************************************
+    *                  smile tabSegment              *
+    ***********************************************-->
+    <attr name="smile_tab_sign_count_view" format="reference"/>
+    <attr name="smile_tab_sign_count_view_minSize" format="dimension"/>
+    <attr name="smile_tab_sign_count_view_minSize_with_text" format="dimension"/>
+    <attr name="smile_tab_sign_count_view_bg" format="reference"/>
+    <attr name="smile_tab_sign_count_view_padding_horizontal" format="dimension"/>
+
+</resources>

@@ -93,7 +93,7 @@
         <!--**********************************************
         *               smile 提供的控件样式                *
         ***********************************************-->
-        <item name="SmileTabSegmentStyle">@style/QMUI.TabSegment</item>
+        <item name="SmileTabSegmentStyle">@style/SmileUI.TabSegment</item>
 
     </style>
 
@@ -122,7 +122,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="QMUI.Compat.NoActionBar" parent="SmileUI.NoActionBar"/>
+    <style name="SmileUI.Compat.NoActionBar" parent="SmileUI.NoActionBar"/>
 
 
 

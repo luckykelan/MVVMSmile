@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--********************* TabSegment *********************-->
-    <style name="QMUI.TabSegment">
+    <style name="SmileUI.TabSegment">
         <item name="smile_tab_has_indicator">false</item>
         <item name="smile_tab_indicator_height">@dimen/smile_tab_segment_indicator_height</item>
         <item name="smile_tab_normal_text_size">@dimen/smile_tab_segment_text_size</item>

@@ -8,12 +8,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
-import com.classic.common.MultipleStatusView;
 import com.kelan.mvvmsmile.R;
 import com.kelan.mvvmsmile.binding.command.BindingConsumer;
 import com.kelan.mvvmsmile.bus.messenger.Messenger;
@@ -36,7 +36,7 @@ public abstract class BaseActivity<V extends ViewDataBinding, VM extends BaseVie
     protected V binding;
     protected VM viewModel;
 
-    protected MultipleStatusView multipleStatusView;
+    protected FrameLayout multipleStatusView;
     private ViewGroup mContentView;
     private Toolbar toolbar;
     protected ImageView rightImg;

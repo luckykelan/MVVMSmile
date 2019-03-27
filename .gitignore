@@ -30,3 +30,11 @@ proguard/
 
 # Android Studio captures folder
 captures/
+
+mvvmsmile/mvvmsmile\.iml
+
+MVVMSmile\.iml
+
+\.idea/
+
+app/app\.iml

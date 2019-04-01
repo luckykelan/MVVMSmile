@@ -38,3 +38,5 @@ MVVMSmile\.iml
 \.idea/
 
 app/app\.iml
+
+app/release/

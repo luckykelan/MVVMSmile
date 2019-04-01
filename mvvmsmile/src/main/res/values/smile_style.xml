@@ -16,6 +16,17 @@
 -->
 
 <resources>
+    <!--**********************************************
+   *                  Dialog                        *
+   **********************************************-->
+    <style name="smile_dialog_wrap">
+        <item name="android:background">?attr/smile_dialog_bg</item>
+        <item name="smile_radius">?attr/smile_dialog_radius</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">?attr/smile_dialog_margin_vertical</item>
+        <item name="android:layout_marginBottom">?attr/smile_dialog_margin_vertical</item>
+    </style>
     <style name="smile_tab_sign_count_view">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">?attr/smile_tab_sign_count_view_minSize</item>
@@ -28,5 +39,21 @@
         <item name="android:paddingRight">?attr/smile_tab_sign_count_view_padding_horizontal</item>
         <item name="android:minWidth">?attr/smile_tab_sign_count_view_minSize</item>
         <item name="android:minHeight">?attr/smile_tab_sign_count_view_minSize</item>
+    </style>
+
+    <style name="smile_tip_dialog_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">?attr/smile_tip_dialog_min_width</item>
+        <item name="android:minHeight">?attr/smile_tip_dialog_min_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">?attr/smile_content_spacing_horizontal</item>
+        <item name="android:layout_marginRight">?attr/smile_content_spacing_horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">?attr/smile_tip_dialog_padding_horizontal</item>
+        <item name="android:paddingRight">?attr/smile_tip_dialog_padding_horizontal</item>
+        <item name="android:paddingTop">?attr/smile_tip_dialog_padding_vertical</item>
+        <item name="android:paddingBottom">?attr/smile_tip_dialog_padding_vertical</item>
+        <item name="android:background">?attr/smile_tip_dialog_bg</item>
     </style>
 </resources>

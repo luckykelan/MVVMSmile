@@ -16,6 +16,7 @@
 -->
 
 <resources>
+
     <!--**************** SmileTabSegment ******************-->
     <declare-styleable name="SmileTabSegment">
         <attr name="smile_tab_indicator_height" format="dimension"/>
@@ -53,5 +54,78 @@
         <attr name="android:shadowDx"/>
         <attr name="android:shadowRadius"/>
     </declare-styleable>
+
+    <!-- 圆角是否要自适应为 View 高度的一半 -->
+    <attr name="smile_isRadiusAdjustBounds" format="boolean"/>
+    <!-- 同时指定四个方向的圆角大小 -->
+    <attr name="smile_radius" format="dimension"/>
+    <!-- 指定左上方圆角的大小 -->
+    <attr name="smile_radiusTopLeft" format="dimension"/>
+    <!-- 指定右上方圆角的大小 -->
+    <attr name="smile_radiusTopRight" format="dimension"/>
+    <!-- 指定左下方圆角的大小 -->
+    <attr name="smile_radiusBottomLeft" format="dimension"/>
+    <!-- 指定右下方圆角的大小 -->
+    <attr name="smile_radiusBottomRight" format="dimension"/>
+
+    <declare-styleable name="SmileLinkTextView">
+        <attr name="smile_linkBackgroundColor" format="color"/>
+        <attr name="smile_linkTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="SmileLayout">
+        <attr name="android:maxWidth"/>
+        <attr name="android:maxHeight"/>
+        <attr name="android:minWidth"/>
+        <attr name="android:minHeight"/>
+        <attr name="smile_bottomDividerHeight" format="dimension"/>
+        <attr name="smile_bottomDividerColor" format="color|reference"/>
+        <attr name="smile_bottomDividerInsetLeft" format="dimension"/>
+        <attr name="smile_bottomDividerInsetRight" format="dimension"/>
+        <attr name="smile_topDividerHeight" format="dimension"/>
+        <attr name="smile_topDividerColor" format="color|reference"/>
+        <attr name="smile_topDividerInsetLeft" format="dimension"/>
+        <attr name="smile_topDividerInsetRight" format="dimension"/>
+        <attr name="smile_leftDividerWidth" format="dimension"/>
+        <attr name="smile_leftDividerColor" format="color|reference"/>
+        <attr name="smile_leftDividerInsetTop" format="dimension"/>
+        <attr name="smile_leftDividerInsetBottom" format="dimension"/>
+        <attr name="smile_rightDividerWidth" format="dimension"/>
+        <attr name="smile_rightDividerColor" format="color|reference"/>
+        <attr name="smile_rightDividerInsetTop" format="dimension"/>
+        <attr name="smile_rightDividerInsetBottom" format="dimension"/>
+        <attr name="smile_radius"/>
+        <attr name="smile_borderColor"/>
+        <attr name="smile_borderWidth"/>
+        <attr name="smile_outerNormalColor" format="color|reference"/>
+        <attr name="smile_hideRadiusSide" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+            <enum name="left" value="4"/>
+        </attr>
+        <attr name="smile_showBorderOnlyBeforeL" format="boolean"/>
+        <attr name="smile_shadowElevation" format="dimension"/>
+        <attr name="smile_useThemeGeneralShadowElevation" format="boolean"/>
+        <attr name="smile_shadowAlpha" format="float"/>
+        <attr name="smile_outlineInsetTop" format="dimension"/>
+        <attr name="smile_outlineInsetLeft" format="dimension"/>
+        <attr name="smile_outlineInsetRight" format="dimension"/>
+        <attr name="smile_outlineInsetBottom" format="dimension"/>
+        <attr name="smile_outlineExcludePadding" format="boolean"/>
+    </declare-styleable>
+
+    <!--************ 更新小红点与 new 的样式配置 ***********-->
+    <attr name="SmileTipPointStyle" format="reference"/>
+    <attr name="SmileTipNewStyle" format="reference"/>
+
+
+    <!--************ SmileLoading ***********-->
+    <declare-styleable name="SmileLoadingView">
+        <attr name="smile_loading_view_size" format="dimension"/>
+        <attr name="android:color"/>
+    </declare-styleable>
+    <attr name="SmileLoadingStyle" format="reference"/>
 
 </resources>

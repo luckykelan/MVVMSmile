@@ -28,25 +28,25 @@
 	如果在项目中要对特定项目配置业务相关的 Theme，在 values 目录下修改 themes.xml 的 AppTheme。
      -->
 
-    <style name="AppRootTheme" parent="Theme.AppCompat.Light"/>
+    <style name="AppRootTheme" parent="Theme.AppCompat.Light" />
 
-    <style name="AppBaseTheme" parent="AppRootTheme">
-    </style>
+    <style name="AppBaseTheme" parent="AppRootTheme"></style>
 
 
-    <style name="AppConfigTheme" parent="AppBaseTheme" >
+    <style name="AppConfigTheme" parent="AppBaseTheme">
         <item name="colorPrimary">?attr/smile_config_color_blue</item>
         <item name="colorPrimaryDark">?attr/smile_config_color_blue</item>
         <item name="colorAccent">?attr/smile_config_color_blue</item>
         <item name="colorControlNormal">@color/smile_config_color_white</item>
-        <item name="android:textColorPrimary">?attr/smile_config_color_blue</item>
-        <item name="android:textColorSecondary">?attr/smile_config_color_blue</item> <!--返回箭头也是用这个颜色-->
+        <!--<item name="android:textColorPrimary">?attr/smile_config_color_blue</item>-->
+        <!--<item name="android:textColorSecondary">?attr/smile_config_color_blue</item> 返回箭头也是用这个颜色-->
         <item name="android:windowBackground">@color/smile_config_color_white</item>
         <item name="android:editTextColor">?attr/smile_config_color_black</item>
     </style>
 
     <style name="SmileUI" parent="AppConfigTheme">
-        <item name="smile_content_padding_horizontal">@dimen/smile_content_padding_horizontal</item> <!-- 已废弃 -->
+        <item name="smile_content_padding_horizontal">@dimen/smile_content_padding_horizontal
+        </item> <!-- 已废弃 -->
         <item name="smile_content_spacing_horizontal">@dimen/smile_content_spacing_horizontal</item>
 
         <!--**********************************************
@@ -55,9 +55,13 @@
         <item name="smile_config_color_blue">@color/smile_config_color_blue</item>
         <item name="smile_config_color_red">@color/smile_config_color_red</item>
         <item name="smile_config_color_separator">@color/smile_config_color_separator</item>
-        <item name="smile_config_color_separator_darken">@color/smile_config_color_separator_darken</item>
+        <item name="smile_config_color_separator_darken">
+            @color/smile_config_color_separator_darken
+        </item>
         <item name="smile_config_color_background">@color/smile_config_color_background</item>
-        <item name="smile_config_color_background_pressed">@color/smile_config_color_background_pressed</item>
+        <item name="smile_config_color_background_pressed">
+            @color/smile_config_color_background_pressed
+        </item>
         <item name="smile_config_color_black">@color/smile_config_color_black</item>
         <item name="smile_config_color_link">@color/smile_config_color_link</item>
         <item name="smile_config_color_pressed">@color/smile_config_color_pressed</item>
@@ -80,10 +84,54 @@
 
 
         <!--**********************************************
+        *                smile dialog                     *
+        **********************************************-->
+        <item name="smile_dialog_min_width">260dp</item>
+        <item name="smile_dialog_max_width">304dp</item>
+        <item name="smile_dialog_bg">@drawable/smile_dialog_bg</item>
+        <item name="smile_dialog_radius">@dimen/smile_dialog_radius</item>
+        <item name="smile_dialog_margin_vertical">20dp</item>
+        <item name="smile_dialog_padding_horizontal">24dp</item>
+        <item name="smile_dialog_background_dim_amount">0.6</item>
+        <item name="smile_dialog_wrapper_style">@style/SmileUI.Dialog.Wrapper</item>
+        <item name="smile_dialog_title_style">@style/SmileUI.Dialog.Title</item>
+        <item name="smile_dialog_action_container_style">@style/SmileUI.Dialog.ActionContainer
+        </item>
+        <item name="smile_dialog_action_style">@style/SmileUI.Dialog.Action</item>
+        <item name="smile_dialog_message_content_style">@style/SmileUI.Dialog.MessageContent</item>
+        <item name="smile_dialog_edit_content_style">@style/SmileUI.Dialog.EditContent</item>
+        <item name="smile_dialog_menu_container_style">@style/SmileUI.Dialog.MenuContainer</item>
+        <item name="smile_dialog_menu_item_style">@style/SmileUI.Dialog_MenuItem</item>
+
+        <!-- tip -->
+        <item name="smile_tip_dialog_bg">@drawable/smile_tip_dialog_bg</item>
+        <item name="smile_tip_dialog_min_width">120dp</item>
+        <item name="smile_tip_dialog_min_height">56dp</item>
+        <item name="smile_tip_dialog_margin_horizontal">?attr/smile_content_spacing_horizontal
+        </item>
+        <item name="smile_tip_dialog_padding_vertical">12dp</item>
+        <item name="smile_tip_dialog_padding_horizontal">?attr/smile_content_padding_horizontal
+        </item>
+
+
+        <!--**********************************************
+       *             smile list item bg                  *
+       **********************************************-->
+
+
+        <item name="smile_s_list_item_bg_with_border_none">
+            @drawable/smile_s_list_item_bg_with_border_none
+        </item>
+
+        <item name="smile_s_checkbox">@drawable/smile_s_checkbox</item>
+
+
+        <!--**********************************************
         *                  smile tabSegment               *
         ***********************************************-->
         <item name="smile_tab_sign_count_view">@style/smile_tab_sign_count_view</item>
-        <item name="smile_tab_sign_count_view_minSize">@dimen/smile_tab_sign_count_view_minSize</item>
+        <item name="smile_tab_sign_count_view_minSize">@dimen/smile_tab_sign_count_view_minSize
+        </item>
         <item name="smile_tab_sign_count_view_minSize_with_text">
             @dimen/smile_tab_sign_count_view_minSize_with_text
         </item>
@@ -97,13 +145,13 @@
 
     </style>
 
-    <style name="SmileUI.Compat" parent="SmileUI"/>
+    <style name="SmileUI.Compat" parent="SmileUI" />
 
-    <style name="ListViewBase.Compat" parent="@style/Widget.AppCompat.ListView"/>
+    <style name="ListViewBase.Compat" parent="@style/Widget.AppCompat.ListView" />
 
-    <style name="GridViewBase.Compat" parent="android:Widget.GridView"/>
+    <style name="GridViewBase.Compat" parent="android:Widget.GridView" />
 
-    <style name="ImageButtonBase.Compat" parent="@style/Widget.AppCompat.ImageButton"/>
+    <style name="ImageButtonBase.Compat" parent="@style/Widget.AppCompat.ImageButton" />
 
     <style name="ButtonBase.Compat" parent="@style/Widget.AppCompat.Button">
         <!-- 取消 Button 字符默认大写的功能（会导致 Spannable 失效），默认值只影响 5.0 以上版本，但使用Compat包后，4.x 版本也会受到影响 -->
@@ -111,19 +159,20 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
-    <style name="EditTextBase.Compat" parent="@style/Widget.AppCompat.EditText"/>
+    <style name="EditTextBase.Compat" parent="@style/Widget.AppCompat.EditText" />
 
-    <style name="AutoCompleteTextViewBase.Compat" parent="@style/Widget.AppCompat.AutoCompleteTextView"/>
+    <style name="AutoCompleteTextViewBase.Compat" parent="@style/Widget.AppCompat.AutoCompleteTextView" />
 
-    <style name="DropDownListViewBase.Compat" parent="@style/Widget.AppCompat.ListView.DropDown"/>
-    <style name="TextAppearanceBase" parent="android:TextAppearance"/>
+    <style name="DropDownListViewBase.Compat" parent="@style/Widget.AppCompat.ListView.DropDown" />
+
+    <style name="TextAppearanceBase" parent="android:TextAppearance" />
 
     <style name="SmileUI.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="SmileUI.Compat.NoActionBar" parent="SmileUI.NoActionBar"/>
 
+    <style name="SmileUI.Compat.NoActionBar" parent="SmileUI.NoActionBar" />
 
 
 </resources>

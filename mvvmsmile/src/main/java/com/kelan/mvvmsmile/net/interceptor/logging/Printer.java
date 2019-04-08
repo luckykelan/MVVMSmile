@@ -2,6 +2,7 @@ package com.kelan.mvvmsmile.net.interceptor.logging;
 
 import android.text.TextUtils;
 
+import com.kelan.mvvmsmile.utils.RSAHelper;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -10,7 +11,6 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.util.List;
 
-import com.kelan.mvvmsmile.utils.RSAHelper;
 import okhttp3.Request;
 import okio.Buffer;
 
@@ -184,7 +184,8 @@ class Printer {
             if (copy.body() == null)
                 return "";
             copy.body().writeTo(buffer);
-            return rsaHelper.decryptWithBase64(getJsonString(buffer.readUtf8(),rsaHelper));
+            //return rsaHelper.decryptWithBase64(getJsonString(buffer.readUtf8(),rsaHelper));
+            return getJsonString(buffer.readUtf8(),rsaHelper);
         } catch (final IOException e) {
             return "{\"err\": \"" + e.getMessage() + "\"}";
         }

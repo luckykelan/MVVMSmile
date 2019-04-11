@@ -68,7 +68,7 @@ class Printer {
 
     static void printJsonResponse(LoggingInterceptor.Builder builder, long chainMs, boolean isSuccessful,
                                   int code, String headers, String bodyString, List<String> segments) {
-        String responseBody = LINE_SEPARATOR + BODY_TAG + LINE_SEPARATOR + getJsonString(builder.getRsaHelper().decryptWithBase64(bodyString),builder.getRsaHelper());
+        String responseBody = LINE_SEPARATOR + BODY_TAG + LINE_SEPARATOR + getJsonString(bodyString,builder.getRsaHelper());
         String tag = builder.getTag(false);
         if (builder.getLogger() == null)
             I.log(builder.getType(), tag, RESPONSE_UP_LINE);

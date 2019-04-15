@@ -1,5 +1,6 @@
 package com.kelan.mvvmsmile.binding.viewadapter.radiogroup;
 
+import android.util.Log;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
@@ -31,7 +32,9 @@ public class ViewAdapter {
             @Override
             public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
                 RadioButton radioButton = (RadioButton) group.findViewById(checkedId);
+                Log.i("whwhid", checkedId + "");
                 if (radioButton != null)
+                    Log.i("whwhradio", "[[[[[");
                     bindingCommand.execute(radioButton.getTag().toString());
             }
         });

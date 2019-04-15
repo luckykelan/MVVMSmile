@@ -33,7 +33,7 @@ public class ViewAdapter {
             public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
                 RadioButton radioButton = (RadioButton) group.findViewById(checkedId);
                 Log.i("whwhid", checkedId + "");
-                if (radioButton != null)
+                if (checkedId != -1)
                     Log.i("whwhradio", "[[[[[");
                     bindingCommand.execute(radioButton.getTag().toString());
             }

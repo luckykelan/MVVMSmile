@@ -97,6 +97,7 @@
     </declare-styleable>
     <declare-styleable name="RadioGroup">
         <attr name="onCheckedChangedCommand" format="reference" />
+        <attr name="onCheckedTagChangedCommand" format="reference" />
     </declare-styleable>
 
     <declare-styleable name="Spinner">

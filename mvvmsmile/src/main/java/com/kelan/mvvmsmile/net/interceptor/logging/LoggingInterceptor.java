@@ -2,6 +2,7 @@ package com.kelan.mvvmsmile.net.interceptor.logging;
 
 import android.text.TextUtils;
 
+import com.kelan.mvvmsmile.utils.RSAHelper;
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -9,7 +10,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import com.kelan.mvvmsmile.utils.RSAHelper;
 import okhttp3.Headers;
 import okhttp3.Interceptor;
 import okhttp3.MediaType;

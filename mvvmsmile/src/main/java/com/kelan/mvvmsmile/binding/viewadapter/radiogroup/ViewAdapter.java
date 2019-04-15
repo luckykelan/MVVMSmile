@@ -34,7 +34,6 @@ public class ViewAdapter {
                 RadioButton radioButton = (RadioButton) group.findViewById(checkedId);
                 Log.i("whwhid", checkedId + "");
                 if (checkedId != -1)
-                    Log.i("whwhradio", "[[[[[");
                     bindingCommand.execute(radioButton.getTag().toString());
             }
         });
